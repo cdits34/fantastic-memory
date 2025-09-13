@@ -2,15 +2,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebas
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 import { getFirestore, collection, addDoc, setDoc, doc, serverTimestamp, query, orderBy, onSnapshot, getDocs } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAusTICWuGMBJr5suC0KJtn29AlILkin7U",
-  authDomain: "school-chatroom-f10a6.firebaseapp.com",
-  projectId: "school-chatroom-f10a6",
-  storageBucket: "school-chatroom-f10a6.firebasestorage.app",
-  messagingSenderId: "1088030798418",
-  appId: "1:1088030798418:web:b6c9b3e2b40851e9cae58b",
-  measurementId: "G-B3SPD5R7N1"
-};
+ const firebaseConfig = {
+    apiKey: "AIzaSyDixIrqTpcqN5qRLrhvxLBze-39YhfQLSM",
+    authDomain: "biggens11.firebaseapp.com",
+    projectId: "biggens11",
+    storageBucket: "biggens11.firebasestorage.app",
+    messagingSenderId: "722730526406",
+    appId: "1:722730526406:web:55dbb505e260264e3019c7",
+    measurementId: "G-YQ508C3CBT"
+  };
 const YOUTUBE_API_KEY = "AIzaSyBh-x2mtmrpESpVtper5iE0DGKXBcbDdPM";
 
 const app = initializeApp(firebaseConfig);

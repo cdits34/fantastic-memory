@@ -14,7 +14,7 @@ const firebaseConfig = {
     storageBucket: "biggens11.firebasestorage.app",
     messagingSenderId: "722730526406",
     appId: "1:722730526406:web:55dbb505e260264e3019c7",
-    measurementId: "G-YQ508C3CBT
+    measurementId: "G-YQ508C3CBT"
 };
 const YOUTUBE_API_KEY = "AIzaSyBh-x2mtmrpESpVtper5iE0DGKXBcbDdPM";
 

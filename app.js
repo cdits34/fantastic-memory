@@ -1,8 +1,13 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-import { getFirestore, collection, addDoc, setDoc, doc, serverTimestamp, query, orderBy, onSnapshot, getDocs } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
- const firebaseConfig = {
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
     apiKey: "AIzaSyDixIrqTpcqN5qRLrhvxLBze-39YhfQLSM",
     authDomain: "biggens11.firebaseapp.com",
     projectId: "biggens11",
@@ -11,6 +16,7 @@ import { getFirestore, collection, addDoc, setDoc, doc, serverTimestamp, query, 
     appId: "1:722730526406:web:55dbb505e260264e3019c7",
     measurementId: "G-YQ508C3CBT"
   };
+
 const YOUTUBE_API_KEY = "AIzaSyBh-x2mtmrpESpVtper5iE0DGKXBcbDdPM";
 
 const app = initializeApp(firebaseConfig);

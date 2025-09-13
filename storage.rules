@@ -1,0 +1,10 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Only allow owners to write to their own uploads; anyone can read the files when they have URLs
+    match /uploads/{uid}/{allPaths=**} {
+      allow read: if true; // public by URL
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}

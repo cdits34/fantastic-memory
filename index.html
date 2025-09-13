@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SchoolChat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>SchoolChat</h1>
+  </header>
+
+  <div class="main-container">
+    <!-- DM Sidebar -->
+    <aside id="dm-container">
+      <h3>Direct Messages</h3>
+      <div id="dm-list-sent" class="dm-list">
+        <h4>Sent</h4>
+      </div>
+      <div id="dm-list-received" class="dm-list">
+        <h4>Received</h4>
+      </div>
+    </aside>
+
+    <!-- Chat Area -->
+    <section class="chat-area">
+      <div id="auth">
+        <button id="login">Login with Google</button>
+        <button id="logout" style="display:none;">Logout</button>
+      </div>
+      <div id="user-profile"></div>
+
+      <form id="dm-form" style="display:none;">
+        <input type="email" id="dm-email" placeholder="Enter email to DM" required>
+        <button type="submit">Start DM</button>
+      </form>
+
+      <div id="messages"></div>
+
+      <button id="back-public-btn" style="display:none;">⬅ Back to Public Chat</button>
+
+      <form id="message-form" style="display:none;">
+        <input type="text" id="message-input" placeholder="Type your message">
+        <input type="file" id="file-input" hidden>
+        <button type="button" id="file-btn">📎</button>
+        <button type="button" id="youtube-btn">🎥</button>
+        <button type="button" id="mic-btn">🎤</button>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- YouTube Modal -->
+  <div id="youtube-modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <input type="text" id="youtube-search" placeholder="Search YouTube">
+      <button id="youtube-search-btn">Search</button>
+      <div id="youtube-results"></div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <script src="remove_dm_duplicates.js"></script>
+  <script type="module" src="dm_unread_updater.js"></script>
+</body>
+</html>
